@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'LeagueSpartanVariable';
+    src: url(fonts/LeagueSpartanVariable.woff2) format('truetype'); 
+    font-weight: 200 900;
+}
+
+@font-face {
+    font-family: 'BandeinsSansVariableGX';
+    src: url('fonts/BandeinsSansVariableGX.ttf') format('truetype');
+    font-weight: 200 900;
+
+}
+
+.bar {
+    background-color: #FFDFD8;
+    color: #847F5F;
+    margin: 0 auto;
+    padding: .1rem 0 .1rem 0 ;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    width: 22.3rem;
+
+}
+/* 
+body{
+    margin: 0 auto;
+    text-align: center;
+    width: 20rem;
+} */
+
+html {
+    background-color: white;
+
+}
+
+header {
+    color: #847F5F;
+    text-align: center;
+    font-family: 'LeagueSpartanVariable' ;
+    font-size: 2.5rem;
+    font-weight: 350;
+    margin: 1rem 0 2rem 0;
+
+}
+
+p {
+    font-family: 'BandeinsSansVariableGX';
+}
+
+.recipes {
+
+    background-color: #FDF6ED;
+  /*   box-shadow: 6px 6px 6px 1px #E7E5E5; */
+    font-weight: 500;
+    margin: 1.15rem auto;
+    width: 16rem;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+img:hover {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+
+  .grid{
+      margin: 0 auto;
+      width: 20rem;
+  }
+/* 
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    padding: 10px;
+    align-items: center;
+
+} */
+
+img {
+    width: 100%;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 8%;
+}
+
+.title {
+    color:black;
+    font-size: 1.3rem;
+    font-weight: 750;
+    text-align: left;
+}
+
+.subtitle{
+    color: #966561;
+    font-weight: 200;
+    text-align: left;
+}
+
+.type {
+    border-bottom: solid .3rem #966561;
+    color: #847F5F;
+    font-size: 1.3rem;
+    width: 20rem;
+    padding-bottom: 0;
+    text-align: left;
+
+}
