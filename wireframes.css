@@ -34,6 +34,7 @@ img {
     grid-template-rows: auto auto auto ;
     padding: 10px;
     text-align: center;
+    width: 80rem;
 
 }
 
