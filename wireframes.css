@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'LeagueSpartanVariable';
+    src: url(fonts/LeagueSpartanVariable.woff2) format('truetype'); 
+    font-weight: 200 900;
+}
+
+@font-face {
+    font-family: 'BandeinsSansVariableGX';
+    src: url('fonts/BandeinsSansVariableGX.ttf') format('truetype');
+    font-weight: 200 900;
+
+}
+
+header{
+    font-family: "BandeinsSansVariableGX";
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+img {
+
+    background-color: #FDF6ED;
+  /*   box-shadow: 6px 6px 6px 1px #E7E5E5; */
+    font-weight: 500;
+    margin: 1.15rem auto;
+    width: 16rem;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.grid, .style{
+    display: grid;
+    grid-template-rows: auto auto auto ;
+    padding: 10px;
+    text-align: center;
+
+}
+
+p{
+    font-family: "LeagueSpartanVariable";
+    font-size: 2rem;
+    border-top: solid .1rem black;
+    border-bottom: solid .1rem black;
+    padding: 1rem 0 1rem 0;
+}
