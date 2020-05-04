@@ -11,15 +11,17 @@
 
 }
 
-.bar {
+
+
+.header {
     background-color: #FFDFD8;
     color: #847F5F;
     margin: 0 auto;
     padding: .1rem 0 .1rem 0 ;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 900;
     text-align: center;
-    width: 22.3rem;
+    width: 100%;
 
 }
 /* 
@@ -29,15 +31,42 @@ body{
     width: 20rem;
 } */
 
+.bar{
+    width: 19rem;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: solid .2rem black;
+}
+
 .choose {
     background-color: white;
     color: rgb(94, 87, 47);
-    float: center;
     font-family: "LeagueSpartanVariable";
     font-weight: 500;
     height: 1.5rem;
     text-align: center;
-    width: 6.5rem;
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.chooseselect{
+    margin: 0 auto;
+    width: 7rem;
+}
+
+.cookingit{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 12rem;
+}
+
+.choose_food {
+    width: 15rem;
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 
 html {
@@ -49,28 +78,81 @@ header {
     color: #847F5F;
     text-align: center;
     font-family: 'LeagueSpartanVariable' ;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 350;
     margin: 1rem 0 2rem 0;
-
 }
 
 p {
     font-family: 'BandeinsSansVariableGX';
     margin-bottom: .5rem ;
-    text-align: center;
 }
 
 .recipes {
 
     background-color: #FDF6ED;
-  /*   box-shadow: 6px 6px 6px 1px #E7E5E5; */
+    box-shadow: 6px 6px 6px 1px #E7E5E5; 
     font-weight: 500;
     margin: 1.15rem auto;
     width: 16rem;
     padding: 1rem 2rem 1rem 2rem;
     text-align: center;
 }
+
+/* search area!!!! search area!!!! search area!!!!  */
+
+.searchbar{
+    width: 13rem;
+/*     border: solid .2rem black; */
+    margin: 1rem auto;
+    padding-left: .5rem;
+}
+
+.secondbar{
+    width: 20rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    /* background-color: blue; */
+    margin: 0 auto;
+}
+
+
+.inputsearch{
+    color: black;
+    font-size: .8rem;
+}
+
+form input[type=text]{
+    width: 12rem;
+    height: 2rem;
+    background-color: white;
+    border: solid .2rem black;
+}
+
+
+.quest{
+    font-size: 2rem;
+    width: 2.2rem;
+    height: 2.2rem ;
+    background-color: white;
+    border: solid .1rem black;border-radius: 50%;
+    padding: none;
+}
+
+.quest:hover{
+    border-radius: 0;
+    transition: ease-in-out 0.3s;
+/*     box-shadow: .5rem .3rem .3rem rgb(221, 221, 221); */
+}
+
+button{
+    border:none;
+    background-color: transparent;
+    outline:none;
+}
+
 
 img:hover {
     opacity: 0.4;
@@ -81,22 +163,9 @@ img:hover {
       margin: 0 auto;
       width: 20rem;
   }
-/* 
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    padding: 10px;
-    align-items: center;
-
-} */
 
 img {
     width: 100%;
-}
-
-.logo{
-    border-radius: 50%;
-    width: 8%;
 }
 
 .title {
@@ -116,8 +185,315 @@ img {
     border-bottom: solid .3rem #966561;
     color: #847F5F;
     font-size: 1.3rem;
-    width: 20rem;
+    width: 15rem;
     padding-bottom: 0;
-    text-align: left;
+    padding-left: 1.5rem;
+
+}
+
+p.typepara{
+    width: 10rem;
+}
+
+
+/* menu!!!! */
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+
+
+
+.webnav{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        background-color: #FFDFD8;
+        color: #847F5F;
+        margin: 0 auto;
+        padding: .1rem 0 .1rem 0 ;
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    body {
+        width: 60rem;
+    }
+
+    .choose {
+        background-color: white;
+        color: rgb(94, 87, 47);
+        float: center;
+        font-family: "LeagueSpartanVariable";
+        font-size: 1rem;
+        font-weight: 500;
+        height: 1.5rem;
+        text-align: center;
+        width: 10rem;
+    }
+
+    
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        padding: 10px;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+  
+
+    header {
+        color: #847F5F;
+        text-align: center;
+        font-family: 'LeagueSpartanVariable' ;
+        font-size: 2.5rem;
+        font-weight: 350;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 70%;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 20rem;
+        padding-bottom: 0;
+        padding-left: 0.5rem;
+        margin-left: 2.5rem;
+    
+    }
+    
+    p.typepara{
+        width: 10rem;
+    }
+
+    .searchbar{
+        width: 18rem;
+/*         border: solid .2rem black; */
+        margin: 1rem auto;
+        padding-left: .5rem;
+        font-size: 1.2rem;
+    }
+    
+    .secondbar{
+        width: 20rem;
+         }
+
+
+    form input[type=text]{
+        width: 15rem;
+        height: 2rem;
+        background-color: white;
+        border: solid .2rem black;
+    }   
+
+    .formsearch{
+        width: 15rem;
+    }
+
+    .bar{
+        width: 40rem;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        border-bottom: solid .2rem black;
+    }
+    
+    .choose {
+        width: 9rem;
+        margin: 0 auto;
+    }
+    
+    .chooseselect{
+        margin: 0 auto;
+        width: 8rem;
+    }
+    
+    .cookingit{
+        font-size: 2rem;
+        width: 15rem;
+
+    }
+
+
+    .inputsearch{
+        font-size: 1rem;
+    }
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .header {
+        background-color: #FFDFD8;
+        color: #847F5F;
+        margin: 0 auto;
+        padding: .1rem 0 1rem 0 ;
+        font-size: 1.9rem;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    body{
+        width: 87.6rem;
+    }
+
+    .choose {
+        background-color: white;
+        border: none;
+        color: rgb(94, 87, 47);
+        float: center;
+        font-family: "LeagueSpartanVariable";
+        font-size: 1.2rem;
+        font-weight: 500;
+        height: 2rem;
+        text-align: center;
+        width: 12rem;
+    }
+
+
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        padding: 1rem;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    header {
+        color: #847F5F;
+        text-align: center;
+        font-family: 'LeagueSpartanVariable' ;
+        font-size: 2.8rem;
+        font-weight: 350;
+        padding: 1rem 0;
+        margin: 0 auto;
+    }
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 70%;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 25rem;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        margin-left: 4rem;
+    
+    }
+    
+    p.typepara{
+        width: 10rem;
+    }
+
+    .bar{
+        width: 62rem;
+    /*     background-color: blue; */
+    margin: 0 auto;
+    }
+
+    .choose_food{
+        display: none;
+    }
+
+    .webnav{
+        display: inline;
+    }
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0;
+    overflow: hidden;
+    font-size: 1.5rem;
+    color: black;
+    font-family: "LeagueSpartanVariable";
+  }
+  
+  li {
+    float: left;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    /* background-color: #dddddd; */
+  }
+
+.bar{
+    border-bottom: solid .2rem black;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+    margin: 0 auto;
+/*     width: 61.5rem; */
+}
+
+.cook{
+    color: #847F5F;
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+
+.searchbar{
+    width: 20rem;
+/*     border: solid .2rem black; */
+    margin: 1rem auto;
+    padding-left: .5rem;
+}
+
+.inputsearch{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.secondbar{
+    width: 25rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    /* background-color: blue; */
+    margin: 0 auto;
+}
+
+form input[type=text]{
+    width: 18rem;
+    height: 3rem;
+    background-color: white;
+    border: solid .2rem black;
+}   
+
+.formsearch{
+    width: 22rem;
+}
 
 }

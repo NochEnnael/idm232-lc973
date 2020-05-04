@@ -1,0 +1,80 @@
+img {
+    background-color: white;
+}
+
+
+.type {
+    font-size: 1.2rem;
+    width: 15rem;
+    padding-bottom: 0;
+    padding-left: 0.5rem;
+    margin-left: 1.7rem;
+    margin-bottom: 3rem;
+
+}
+
+p.typepara{
+    width: 10rem;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 16rem;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 20rem;
+        padding-bottom: 0;
+        padding-left: 0.5rem;
+        margin-left: 2.5rem;
+        margin-bottom: 3rem;
+    
+    }
+    
+    p.typepara{
+        width: 15rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+
+    body{
+        width: 87.6rem;
+    }
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 20rem;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 25rem;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        margin-left: 4rem;
+        margin-bottom: 3rem;
+    
+    }
+    
+    p.typepara{
+        width: 15rem;
+    }
+
+
+}

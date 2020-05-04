@@ -1,0 +1,147 @@
+h1{
+    font-family: "BandeinsSansVariableGX";
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+h2{
+    color: #966561;
+    font-family: "LeagueSpartanVariable";
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin:0;
+
+}
+
+.hero, .recipephoto,.recipeingredient {
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    width: 60%;
+}
+
+
+.aboutintro, .steps{
+    display: block;
+    margin: 0 auto;
+    width: 18rem;
+}
+
+.ingredienttext{
+    color: #847F5F;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+    width: 15rem;
+    text-align: center;
+
+}
+
+ol li {
+    padding-top: 1rem;
+}
+
+.recipe {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    h1{
+        font-size: 2.3rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+
+    }  
+
+    .ingredients{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 50rem; 
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recipeingredient{
+        border-right: solid .2rem black;
+        width: 20rem;
+    }
+    
+    ol li {
+        font-size: 1.3rem;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        width: 15rem;
+    
+    }
+
+    .aboutintro, .steps{
+        width: 40rem;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        }
+
+        .hero, .recipephoto {
+            width: 39%;
+        }
+        
+}
+
+@media screen and (min-width: 1024px) {
+
+  
+    h1{
+        font-size: 2.8rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+
+    }
+
+.hero, .recipephoto {
+    width: 45%;
+}
+
+.recipeingredient{
+    border-right: solid .2rem black;
+    width: 30rem;
+}
+
+
+.stepdiv{
+    margin: 0 auto;
+}
+
+.ingredients{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70rem; 
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+ol li {
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    width: 15rem;
+
+}
+
+.aboutintro, .steps{
+    width: 50rem;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+
+}

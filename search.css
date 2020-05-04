@@ -1,0 +1,101 @@
+
+  .type {
+    font-size: 1.2rem;
+    width: 15rem;
+    padding-bottom: 0;
+    padding-left: 0.5rem;
+    margin-left: 1.7rem;
+
+}
+
+p.typepara{
+    width: 10rem;
+}
+
+.bottomresults{
+    border-top: solid .1rem black;
+    color: #847F5F;
+    font-size: 1rem;
+    margin: 3rem auto;
+    text-align: center;
+    width: 15rem;
+    
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 13rem;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 20rem;
+        padding-bottom: 0;
+        padding-left: 0.5rem;
+        margin-left: 2.5rem;
+    
+    }
+    
+    p.typepara{
+        width: 15rem;
+    }
+
+    .bottomresults{
+        border-top: solid .1rem black;
+        color: #847F5F;
+        font-size: 1.5rem;
+        margin: 5rem auto;
+        text-align: center;
+        width: 20rem;
+        
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+
+    body{
+        width: 87.6rem;
+    }
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 20rem;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 25rem;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        margin-left: 4rem;
+    
+    }
+    
+    p.typepara{
+        width: 15rem;
+    }
+
+    .bottomresults{
+        border-top: solid .1rem black;
+        color: #847F5F;
+        font-size: 1.5rem;
+        margin: 5rem auto;
+        text-align: center;
+        width: 20rem;
+
+        
+    }
+
+
+}

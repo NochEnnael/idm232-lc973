@@ -1,0 +1,251 @@
+.blurb{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0 auto;
+    width: 17rem;
+}
+
+img {
+    background-color: white;
+}
+
+
+.type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 15rem;
+    padding-bottom: 0;
+    padding-left: 0.5rem;
+    margin-left: 1.7rem;
+    margin-bottom: 3rem;
+
+}
+
+p.typepara{
+    width: 10rem;
+}
+
+.contacttitle{
+    border-top: solid .1rem black;
+    color: #847F5F;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 3rem auto;
+    text-align: center;
+    width: 10rem;
+}
+
+
+/* .email, .message{
+    border: solid .1rem black;
+    font-size: .8rem;
+    width: 20rem;
+    padding-left: 1rem;
+    margin: 1rem auto;
+} */
+
+
+form.formhelp input[type=text]{
+    width: 20rem;
+    height: 2rem;
+    background-color: white;
+    border: solid .2rem black;
+    font-size: 1rem;
+    padding-left: 1rem;
+}  
+
+form.emailinput input[type=text]{
+    width: 20rem;
+    height: 2rem;
+    background-color: white;
+    border: solid .2rem black;
+    font-size: 1rem;
+    padding-left: 1rem;
+}  
+
+form.messageinput input[type=text]{
+    width: 20rem;
+    height: 10rem;
+    background-color: white;
+    border: solid .2rem black;
+    font-size: 1rem;
+    padding-left: 1rem;
+    text-align: left;
+}  
+
+.name, .email, .message{
+    width: 20rem;
+    margin: 1rem auto;
+}
+
+.messageinput{
+    height: 10rem;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 16rem;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 20rem;
+        padding-bottom: 0;
+        padding-left: 0.5rem;
+        margin-left: 2.5rem;
+        margin-bottom: 3rem;
+    
+    }
+    
+    p.typepara{
+        width: 15rem;
+    }
+
+    .blurb{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 200;
+        margin: 0 auto;
+        width: 34rem;
+    }
+
+    .contacttitle{
+        border-top: solid .1rem black;
+        color: #847F5F;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 3rem auto;
+        text-align: center;
+        width: 15rem;
+    }
+
+/*     .email, .message{
+        border: solid .1rem black;
+        font-size: 1rem;
+        width: 40rem;
+        padding-left: 1rem;
+        margin: 1rem auto;
+    }
+ */
+
+ form.formhelp input[type=text]{
+    width: 35rem;
+
+}  
+
+form.emailinput input[type=text]{
+    width: 35rem;
+
+}  
+
+form.messageinput input[type=text]{
+    width: 35rem;
+
+}  
+
+.name, .email, .message{
+    width: 35rem;
+    margin: 1rem auto;
+}
+
+.messageinput{
+    height: 10rem;
+}
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+
+    body{
+        width: 87.6rem;
+    }
+
+    .recipes {
+        margin: 1.15rem auto;
+        width: 20rem;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .type {
+        font-size: 2rem;
+        width: 25rem;
+        padding-bottom: 0;
+        padding-left: 1rem;
+        margin-left: 4rem;
+        margin-bottom: 3rem;
+    
+    }
+    
+    p.typepara{
+        width: 15rem;
+    }
+
+    .blurb{
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 200;
+        margin: 0 auto;
+        width: 47rem;
+    }
+
+    .contacttitle{
+        border-top: solid .1rem black;
+        color: #847F5F;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 3rem auto;
+        text-align: center;
+        width: 20rem;
+    }
+
+ /*    .email, .message{
+        border: solid .1rem black;
+        font-size: 1.2rem;
+        width: 42rem;
+        padding-left: 1rem;
+        margin: 1rem auto;
+    }
+     */
+    
+
+    form.formhelp input[type=text]{
+        width: 42rem;
+
+    }  
+
+    form.emailinput input[type=text]{
+        width: 42rem;
+   
+    }  
+
+    form.messageinput input[type=text]{
+        width: 42rem;
+     
+    }  
+
+    .name, .email, .message{
+        width: 43rem;
+        margin: 1rem auto;
+    }
+
+    .messageinput{
+        height: 10rem;
+    }
+
+
+}

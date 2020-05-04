@@ -11,6 +11,27 @@
 
 }
 
+a{
+    font-family: "BandeinsSansVariableGX";
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+a:visited{
+    color: black;
+    
+}
+
+.link{
+    border: solid .2rem #847F5F;
+    margin: 1rem auto;
+    text-align: center;
+    padding: .5rem;
+    width: 25rem;
+
+}
+
 header{
     font-family: "BandeinsSansVariableGX";
     font-size: 2rem;
@@ -18,23 +39,25 @@ header{
     margin-top: 2rem;
 }
 
+
 img {
 
     background-color: #FDF6ED;
   /*   box-shadow: 6px 6px 6px 1px #E7E5E5; */
     font-weight: 500;
     margin: 1.15rem auto;
-    width: 16rem;
+    width: 40%;
     padding: 1rem 2rem 1rem 2rem;
     text-align: center;
 }
 
-.grid, .style{
-    display: grid;
-    grid-template-rows: auto auto auto ;
+ .grid, .style{
+/*     display: grid;
+    grid-template-rows: auto auto auto ; */
     padding: 10px;
     text-align: center;
     width: 80rem;
+    margin: 0 auto;
 
 }
 
@@ -44,4 +67,8 @@ p{
     border-top: solid .1rem black;
     border-bottom: solid .1rem black;
     padding: 1rem 0 1rem 0;
+}
+
+.style{
+    width: 90%;
 }
