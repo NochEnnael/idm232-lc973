@@ -1,16 +1,19 @@
 @font-face {
     font-family: 'LeagueSpartanVariable';
-    src: url(fonts/LeagueSpartanVariable.woff2) format('truetype'); 
+    src: url(../fonts/LeagueSpartanVariable.woff2) format('truetype'); 
     font-weight: 200 900;
 }
 
 @font-face {
     font-family: 'BandeinsSansVariableGX';
-    src: url('fonts/BandeinsSansVariableGX.ttf') format('truetype');
+    src: url('../fonts/BandeinsSansVariableGX.ttf') format('truetype');
     font-weight: 200 900;
 
 }
 
+body{
+    margin: 0 auto;
+}
 
 
 .header {
@@ -24,12 +27,6 @@
     width: 100%;
 
 }
-/* 
-body{
-    margin: 0 auto;
-    text-align: center;
-    width: 20rem;
-} */
 
 .bar{
     width: 19rem;
@@ -139,6 +136,7 @@ form input[type=text]{
     background-color: white;
     border: solid .1rem black;border-radius: 50%;
     padding: none;
+    margin: 0;
 }
 
 .quest:hover{
@@ -159,10 +157,10 @@ img:hover {
     transition: 0.3s;
   }
 
-  .grid{
+/*   .grid{
       margin: 0 auto;
       width: 20rem;
-  }
+  } */
 
 img {
     width: 100%;
@@ -216,6 +214,11 @@ a:link, a:visited {
 
 @media screen and (min-width: 768px) {
 
+  /*   body{
+        margin: 0 auto;
+        width: 60rem;
+    } */
+
     .header {
         background-color: #FFDFD8;
         color: #847F5F;
@@ -227,9 +230,6 @@ a:link, a:visited {
 
     }
 
-    body {
-        width: 60rem;
-    }
 
     .choose {
         background-color: white;
@@ -243,16 +243,22 @@ a:link, a:visited {
         width: 10rem;
     }
 
-    
     .grid{
         display: grid;
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: auto auto;
+    }
+
+
+    
+/*     .grid{
+     display: grid;
+        grid-template-columns: auto auto auto ; 
         padding: 10px;
         align-items: center;
         margin: 0 auto;
         width: 100%;
-    }
-  
+    } 
+   */
 
     header {
         color: #847F5F;
@@ -340,6 +346,11 @@ a:link, a:visited {
 
 @media screen and (min-width: 1024px) {
 
+/*     body{
+        margin: 0 auto;
+        width: 86rem;
+    } */
+
 
     .header {
         background-color: #FFDFD8;
@@ -352,9 +363,6 @@ a:link, a:visited {
 
     }
 
-    body{
-        width: 87.6rem;
-    }
 
     .choose {
         background-color: white;
@@ -372,12 +380,18 @@ a:link, a:visited {
 
     .grid{
         display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+
+/*     .grid{
+        display: grid;
         grid-template-columns: auto auto auto ;
         padding: 1rem;
         align-items: center;
         margin: 0 auto;
         width: 100%;
-    }
+    } */
 
     header {
         color: #847F5F;
@@ -409,11 +423,6 @@ a:link, a:visited {
         width: 10rem;
     }
 
-    .bar{
-        width: 62rem;
-    /*     background-color: blue; */
-    margin: 0 auto;
-    }
 
     .choose_food{
         display: none;
@@ -453,6 +462,8 @@ ul {
     text-align: center;
     padding: 1rem 0 2rem 0;
     margin: 0 auto;
+    width: 62rem;
+    /*     background-color: blue; */
 /*     width: 61.5rem; */
 }
 

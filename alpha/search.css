@@ -26,12 +26,6 @@ p.typepara{
 @media screen and (min-width: 768px) {
 
 
-    .recipes {
-        margin: 1.15rem auto;
-        width: 13rem;
-        padding: 1rem 2rem 1rem 2rem;
-        text-align: center;
-    }
 
     .type {
         font-size: 2rem;
@@ -59,19 +53,6 @@ p.typepara{
 }
 
 @media screen and (min-width: 1024px) {
-
-
-
-    body{
-        width: 87.6rem;
-    }
-
-    .recipes {
-        margin: 1.15rem auto;
-        width: 20rem;
-        padding: 1rem 2rem 1rem 2rem;
-        text-align: center;
-    }
 
     .type {
         font-size: 2rem;
