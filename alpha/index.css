@@ -269,12 +269,12 @@ a:link, a:visited {
         margin: 1rem 0 2rem 0;
     }
 
-    .recipes {
+/*     .recipes {
         margin: 1.15rem auto;
         width: 70%;
         padding: 1rem 2rem 1rem 2rem;
         text-align: center;
-    }
+    } */
 
     .type {
         font-size: 2rem;
@@ -403,13 +403,13 @@ a:link, a:visited {
         margin: 0 auto;
     }
 
-    .recipes {
+/*     .recipes {
         margin: 1.15rem auto;
         width: 70%;
         padding: 1rem 2rem 1rem 2rem;
         text-align: center;
     }
-
+ */
     .type {
         font-size: 2rem;
         width: 25rem;

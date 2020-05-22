@@ -1,12 +1,55 @@
+<?php 
+
+//step 1 open a connection to DB
+
+require '../include/db.php';
+
+//step 2 perform a DB table query
+
+$table = 'recipes'; 
+$query = "SELECT * FROM {$table} ";
+$result = mysqli_query($connection, $query);
+
+//check for errors in SQL statement 
+
+if (!$result) {
+    die ('Database query failed');
+
+}
+    
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../alpha/index.css">
     <title>Home Page</title>
 </head>
 <body>
+
+<?php
+
+while ($row = mysqli_fetch_assoc($result)) {
+    $title = $row ['Title'];
+    $subtitle = $row ['Subtitle'];
+    echo $title;
+    echo $subtitle;
+    echo "<hr>";
+    }
+
+    //step 4 relesase returned data 
+    
+    mysqli_free_result($result);
+
+    //step 5 close the database connection 
+
+    mysqli_close($connection);
+?>
     
     <div class="header">
         <a href="index.html">

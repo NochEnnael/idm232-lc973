@@ -1,12 +1,38 @@
+<?php 
+
+//step 1 open a connection to DB
+
+require '../include/db.php';
+
+//step 2 perform a DB table query
+
+$table = 'recipes'; 
+$query = "SELECT * FROM {$table} ";
+$result = mysqli_query($connection, $query);
+
+//check for errors in SQL statement 
+
+if (!$result) {
+    die ('Database query failed');
+
+}
+    
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../alpha/index.css">
     <title>Home Page</title>
 </head>
 <body>
+
+
     
     <div class="header">
         <a href="index.html">
@@ -76,73 +102,35 @@
 
     <div class="grid"> 
 
-        <div class="recipes">
-            <a href="recipe.html">
-                <img src="../graphics/0101_2PM_Steak-Diane_97315_SQ_hi_res.jpg" alt="steak">
-                <p class="title">Beef Medallions & Mushroom Sauce</p>
-                <p class="subtitle">With Mashed Potatoes</p>
-            </a>
-        </div>
+        <?php
+
+            while ($row = mysqli_fetch_assoc($result)) {
+
+        ?>    
+
 
         <div class="recipes">
             <a href="recipe.html">
-                <img src="../graphics/0101_FPP_Chicken-Rice_97338_WEB_SQ_hi_res.jpg" alt="chicken">
+                <img src="../headimg/<?php echo $row['main_img'] ?>" alt="steak">
                 <p class="title">
-                    Ancho Orange Chicken
+                    <?php echo $row['tle']; ?>
                 </p>
                 <p class="subtitle">
-                    With Kale Rice & Roasted Carrots
-                </p>
-            </a>
-        </div>
-
-        <div class="recipes">
-            <a href="recipe.html">
-                <img src="../graphics/1225_2PV1_Bucatini_100082_SQ_hi_res.jpg" alt="broccoli">
-                <p class="title">
-                    Bucatini Alfredo 
-                </p>
-                <p class="subtitle">
-                    With Broccoli
-                </p>
-            </a>    
-        </div>
-
-        <div class="recipes">
-            <a href="recipe.html">
-                <img src="../graphics/1225_FPV_Pesto_-Broccoli-Sandwich_74916_WEB_SQ_hi_res.jpg" alt="pesto">
-                <p class="title">
-                    Broccoli and Basil Pesto Sandwiches
-                </p>
-                <p class="subtitle">
-                    With Romaine & Citrus Salad
+                <?php echo $row['subtitle']; ?>
                 </p>
             </a>
         </div>
 
-        <div class="recipes">
-            <a href="recipe.html">
-                <img src="../graphics/0101_FPV_Broccoli-Calzones_97286_WEB_SQ_hi_res.jpg" alt="pesto">
-                <p class="title">
-                    Broccoli & Mozzarella Calzones
-                </p>
-                <p class="subtitle">
-                    With Caesar Salad
-                </p>
-            </a>
-        </div>
 
-        <div class="recipes">
-            <a href="recipe.html">
-                <img src="../graphics/1120_FPV_Emchiladas_74891_WEB_SQ_hi_res.jpg" alt="enchiladas">
-                <p class="title">
-                    Cheesy Enchilada Rojas
-                </p>
-                <p class="subtitle">
-                    With Mushrooms and Kale
-                </p>
-            </a>
-        </div>
+        <?php } // end php while of loop
+
+            //step 4 relesase returned data 
+            mysqli_free_result($result);
+            //step 5 close the database connection 
+            mysqli_close($connection);
+        ?>
+
+
 
     </div>
 
