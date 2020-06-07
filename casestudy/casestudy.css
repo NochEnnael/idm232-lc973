@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'BandeinsSansVariableGX';
+    src: url('../fonts/BandeinsSansVariableGX.ttf') format('truetype');
+    font-weight: 200 900;
+}
+
+@font-face {
+    font-family: 'LeagueSpartanVariable';
+    src: url(../fonts/LeagueSpartanVariable.woff2) format('truetype'); 
+    font-weight: 200 900;
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: white;
+}
+
+.hero{
+    margin: 0 auto;
+}
+
+.head{
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    width: 60%;
+    border-bottom: solid .2rem #966561;
+}
+
+header {
+    font-size: 3rem;
+    font-family: 'LeagueSpartanVariable';
+    font-weight: 600;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border: solid .2rem black;
+}
+
+
+.link{
+    font-family: 'LeagueSpartanVariable';
+    font-size: 1.2rem;
+    text-align: center;
+    width: 7rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border: solid .2rem white;
+}
+
+h1{
+    font-family: "BandeinsSansVariableGX";
+    text-align: center;
+    
+}
+
+
+.two{
+    background-color: #FFDFD8;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+}
+
+.one, .three{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+}
+
+.four{
+    background-color: #847F5F;
+    color: white;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    
+
+}
+
+p{
+    font-family:"BandeinsSansVariableGX" ;
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin: 0 auto;
+}
+
+ul {
+    font-family:"BandeinsSansVariableGX" ;
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+h3{
+    color: #847F5F;
+}

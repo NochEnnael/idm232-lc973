@@ -128,6 +128,13 @@ form input[type=text]{
     border: solid .2rem black;
 }
 
+form input [type=submit]{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: solid .2rem black;
+}
+
 
 .quest{
     font-size: 2rem;
@@ -308,6 +315,13 @@ a:link, a:visited {
         background-color: white;
         border: solid .2rem black;
     }   
+
+    form input[type=submit]{
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        border: solid .2rem black;
+    }  
 
     .formsearch{
         width: 15rem;
@@ -502,6 +516,15 @@ form input[type=text]{
     background-color: white;
     border: solid .2rem black;
 }   
+
+
+form input[type=submit]{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: solid .2rem black;
+}   
+
 
 .formsearch{
     width: 22rem;

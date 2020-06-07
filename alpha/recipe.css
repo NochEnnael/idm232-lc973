@@ -31,13 +31,26 @@ h2{
     width: 18rem;
 }
 
+.back{
+    font-family: 'LeagueSpartanVariable';
+    font-size: 1.2rem;
+    text-align: center;
+    width: 7rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: solid .2rem black;
+
+}
+
 .ingredienttext{
     color: #847F5F;
     font-weight: 600;
-    display: block;
+/*     display: block; */
     margin: 0 auto;
-    width: 15rem;
     text-align: center;
+    margin-bottom: 1rem;
+    width: 15rem ;
 
 }
 
@@ -60,17 +73,20 @@ ol li {
 
     }  
 
-    .ingredients{
-        display: grid;
-        grid-template-columns: auto auto;
-        width: 50rem; 
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
+
+    .back{
+        font-size: 1.6rem;
+        width: 10rem;
+   
     }
 
+   .ingredients{
+        width: 50rem; 
+        margin: 0 auto;
+        text-align: center;
+    } 
+
     .recipeingredient{
-        border-right: solid .2rem black;
         width: 20rem;
     }
     
@@ -92,6 +108,17 @@ ol li {
             width: 39%;
         }
         
+
+    .ingredienttext{
+        color: #847F5F;
+        font-weight: 600;
+        /*     display: block; */
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 20rem ;
+        
+        } 
 }
 
 @media screen and (min-width: 1024px) {
@@ -106,42 +133,44 @@ ol li {
 
     }
 
-.hero, .recipephoto {
-    width: 45%;
-}
+    .back{
+        font-size: 1.6rem;
+        width: 10rem;
+    }
 
-.recipeingredient{
-    border-right: solid .2rem black;
-    width: 30rem;
-}
+    .hero, .recipephoto {
+        width: 45%;
+    }
+
+    .recipeingredient{
+        width: 30rem;
+    }
 
 
-.stepdiv{
-    margin: 0 auto;
-}
+    .stepdiv{
+        margin: 0 auto;
+    }
 
-.ingredients{
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 70rem; 
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-}
+    .ingredients{
+        width: 70rem; 
+        margin: 0 auto;
+        text-align: center;
+    }
 
-ol li {
-    font-size: 1.5rem;
-    padding-top: 1.5rem;
-    padding-left: 2rem;
-    width: 15rem;
 
-}
+    ol li {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+        padding-left: 2rem;
+        width: 15rem;
 
-.aboutintro, .steps{
-    width: 50rem;
-    padding: 1rem 0;
-    font-size: 1.2rem;
-}
+    }
+
+    .aboutintro, .steps{
+        width: 50rem;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
 
 
 }

@@ -7,6 +7,7 @@ $dbuser = "root";
 $dbpass = "root";
 $dbname = "cookbook"; // PUT THE DATABASE NAME WITH THE TABLE IN HERE. JSUT NOT THE TABLE NAME
 
+//make sure to comment and uncomment respective to local or online 
 
 //online 
 /* $dbhost = "localhost";
